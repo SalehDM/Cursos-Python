@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Directores{% endblock %}
+
+
+{% block content %}
+<table>
+    
+    {% for director in object_list %}
+        <tr>
+        <td onclick="window.location.href='director/{{director.id}}'">
+            <h4><span class="name_director">{{ director }}</span></h4>
+        
+        </td>
+        </tr>
+              
+    {% endfor %}
+    
+</table>
+
+{% endblock %}

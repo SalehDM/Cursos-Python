@@ -1,0 +1,13 @@
+table {
+    text-align: left;
+}
+
+td{
+    padding: 5px;
+}
+
+main {
+    width: 95%;
+    text-align: justify;
+    margin: auto;
+}

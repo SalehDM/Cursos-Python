@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Director - {{ director }}{% endblock %}
+
+{% block header-title %}{{ director }}{% endblock %}
+
+{% block content %}
+<h4>Biografía</h4>
+<p>{{ director.biography}}</p>
+
+<h4>Peliculas:</h4>
+<table>
+    {% for film in director.film_set.all %}
+     
+        <tr>
+        <td onclick="window.location.href='/film/{{film.id}}'">
+            <h5>{{ film }}</h5>
+        </td>
+        </tr>
+
+    {% empty %}
+        <td>No hay peliculas aún</td>
+    {% endfor %}
+    
+</table>
+{% endblock %}
