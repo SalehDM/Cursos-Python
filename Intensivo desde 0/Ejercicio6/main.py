@@ -1,4 +1,12 @@
+"""
+Ejercicio 6
+Enunciado: Crea una función que convierta un password (entre 6 y 12 caracteres) es una cadena de texto alfanumérica de 32 caracteres. La función SIEMPRE debe devolver el mismo resultado para la misma entrada.
+Objetivo:
+    Aprender a manejar los bucles y las cadena de texto.
+    Mejorar la capacidad algorítmica.
+"""
 import os
+
 def encode(word):
     CHARACTERS='ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789'
     aux=True
